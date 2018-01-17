@@ -1,0 +1,68 @@
+@font-face {
+	font-family: "unispace";
+	src: url("fonts/unispace.ttf");
+}
+
+.mainHeader {
+
+	text-align: left;
+	font-family: "unispace";
+	
+	font-size: 6vw;
+
+	background: #9e42f4;
+	color: white;
+	
+	padding: 1vw;
+	font-weight: bold;
+}
+
+body {
+	overflow-x: hidden;
+	width: 100%;
+	
+	padding: 0px;
+	margin: 0px;
+}
+
+.gameLinkTable {
+
+	position: relative;
+	left: 20vw;
+
+	width: 60vw;
+
+	table-layout:fixed;
+	border: 0px solid #000;
+}
+
+a {
+	text-decoration: none;
+}
+
+.gameLink {
+	position: relative;
+}
+
+.gameLinkText {
+	position: absolute;
+	text-align: center;
+
+	color: #000;
+
+	font-family: "unispace";
+	font-size: 2vw;
+
+	margin-top: 2vw;
+	margin-left: 2vw;
+}
+
+.gameLinkImage {
+	position: absolute;
+	width: 18vw;	
+
+	margin-top: 1vw;
+	margin-bottom: 1vw;
+	margin-right: 1vw;
+	margin-left: 1vw;
+}
