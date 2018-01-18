@@ -57,6 +57,19 @@ a {
 	margin-left: 2vw;
 }
 
+.unfinishedText {
+	position: absolute;
+	text-align: center;
+
+	color: #c00;
+
+	font-family: "unispace";
+	font-size: 2vw;
+
+	margin-top: 5vw;
+	margin-left: 2vw;
+}
+
 .gameLinkImage {
 	position: absolute;
 	width: 18vw;	
