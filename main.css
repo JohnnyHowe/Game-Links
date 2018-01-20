@@ -8,7 +8,6 @@
 }
 
 .mainHeader {
-
 	text-align: left;
 	font-family: "unispace";
 	
@@ -56,12 +55,10 @@ body {
 }
 
 .gameLinkTable {
-	position: absolute;
+	position: relative;
 
 	left: 20vw;
 	width: 60vw;
-
-	margin-top: 4vw;
 
 	table-layout:fixed;
 	border: 0px solid #000;
@@ -76,77 +73,74 @@ a {
 }
 
 .gameLinkText {
-	position: absolute;
-	text-align: center;
+	position: relative;
+	top: -16.5vw;
 
+	text-align: left;
 	color: #000;
 
 	font-family: "unispace";
 	font-size: 2vw;
 
-	margin-top: 2vw;
 	margin-left: 2vw;
 }
 
 .unfinishedText {
 	position: absolute;
-	text-align: center;
+	top: 3.5vw;
 
-	color: #c00;
+	text-align: left;
+	color: #c22;
 
 	font-family: "unispace";
 	font-size: 2vw;
 
-	margin-top: 5vw;
 	margin-left: 2vw;
 }
 
 .gameLinkImage {
-	position: absolute;
+	position: relative;
 	width: 18vw;	
 
-	margin-top: 1vw;
-	margin-bottom: 1vw;
+	margin-bottom: -3vw;
 	margin-right: 1vw;
 	margin-left: 1vw;
 }
 .gameLinkImage:hover {
-	position: absolute;
+	position: relative;
 	width: 18vw;	
 
 	opacity: 0.4;
 
-	margin-top: 1vw;
-	margin-bottom: 1vw;
+	margin-bottom: -3vw;
 	margin-right: 1vw;
 	margin-left: 1vw;
 }
 
 .gameLinkImage:hover + .gameLinkInfo {
-	position: absolute;
-	text-align: center;
+	position: relative;
 
+	text-align: left;
 	color: #000;
 	opacity: 1;
 
 	font-family: "unispace";
 	font-size 1.8vw;
 
-	margin-top: 16vw;
 	margin-left: 2vw
 }
 
 .gameLinkInfo {
-	position: absolute;
+	position: relative;
 	text-align: center;
 
 	opacity: 0;
 	color: #000;
 
 	font-family: "unispace";
-	font-size: 1.4vw;
+	font-size: 1vw;
 
-	margin-top: 16vw;
+	margin-top: 1vw;
 	margin-left: 2vw;
 }
 
@@ -157,7 +151,7 @@ a {
 	color: #eee;
 
 	padding: 2vw;
-	margin-top: 4vw;
+	margin-top: 2vw;
 
 	text-align: center;
 	font-family: "unispace";
@@ -171,6 +165,8 @@ a {
 
 	background-color: #cf9bff;
 	color: #eee;
+
+	padding-bottom: 0.5vw;
 
 	text-align: center;
 	font-family: "unispace";
