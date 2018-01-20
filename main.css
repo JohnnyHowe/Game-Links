@@ -3,6 +3,10 @@
 	src: url("fonts/unispace.ttf");
 }
 
+* {
+	margin: 0;
+}
+
 .mainHeader {
 
 	text-align: left;
@@ -21,13 +25,12 @@
 	position: relative;
 
 	table-layout:fixed;
-	border: 0px solid #000
+	border: 0px solid #000;
 }
 
 .headerLink {
 	text-align: center;
 	font-family: "unispace";
-	
 	margin-right: 2vw;
 	font-size: 2vw;
 	color: #000;
@@ -56,8 +59,9 @@ body {
 	position: absolute;
 
 	left: 20vw;
-
 	width: 60vw;
+
+	margin-top: 4vw;
 
 	table-layout:fixed;
 	border: 0px solid #000;
@@ -153,11 +157,55 @@ a {
 	color: #eee;
 
 	padding: 2vw;
+	margin-top: 4vw;
+
+	text-align: center;
+	font-family: "unispace";
+	
+	font-size: 3vw;
+	font-weight: bold;
+}
+
+#pythonRequirementLink {
+	position: relative;
+
+	background-color: #cf9bff;
+	color: #eee;
+
+	text-align: center;
+	font-family: "unispace";
+	
+	font-size: 2vw;
+	font-weight: bold;
+}
+
+#pythonRequirementLinkSmaller {
+	position: relative;
+
+	background-color: #cf9bff;
+	color: #eee;
+
+	padding-bottom: 2vw;
 	margin-bottom: 3vw;
 
 	text-align: center;
 	font-family: "unispace";
 	
-	font-size: 4vw;
+	font-size: 1.5vw;
 	font-weight: bold;
+}
+
+.tutorialImage {
+	position: relative;
+
+	left: 10vw;
+	width: 80vw;
+
+	padding-top: 2vw;
+	padding-bottom: 2vw;
+}
+
+#tutorialTableImage {
+	position: absolute;
+	border: 1px solid #000;
 }
