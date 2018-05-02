@@ -1,46 +1,85 @@
 <html>
-	<head>
-		<title>Some Shitty Games</title>
-		<link rel="stylesheet" type="text/css" href="main.css">
-	</head>
-	<body>
-		<h1 class="mainHeader">Ahhhh
-			<table class="headerLinktable">
-				<td>
-					<a class="chosenHeaderLink">JavaScript</a>
-				</td>
-				<td>
-					<a href="python.html" class="headerLink">Python</a>
-				</td>
-			</table>
-		</h1>
 
-		<table class="gameLinkTable" style="top: 5vw;">
-			<tr>
-				<td class="gameLink">
-					<a href="https://anwildduck.github.io/flappybird">
-						<img class="gameLinkImage" src="thumbnails/flappybird.png" alt="Flappy Bird">
-						<div class="gameLinkInfo">JS - Click to play Here</div>
-						<div class="gameLinkText">Flappy Bird</div>
-					</a>
-				</td>
-				<td class="gameLink">
-					<a href="https://johnnyhowe.github.io/Snake/">
-						<img class="gameLinkImage" src="thumbnails/snake.png" alt="Snake">
-						<div class="gameLinkInfo">JS - Click to play Here</div>
-						<div class="gameLinkText">Snake</div>
-					</a>
-				</td>
-				<td>
-					<a href="https://johnnyhowe.github.io/conwaygameoflife/">
-						<img class="gameLinkImage" src="thumbnails/gameoflife.png" alt="Conway's Game of Life">
-						<div class="gameLinkInfo">JS - Click to play Here</div>
-						<div class="gameLinkText">Game Of Life</div>
-						<div class="unfinishedText">Unfinished!</div>
-					</a>
-				</td>
-			</tr>
-		</table>
-	</body>
+<head>
+    <title>Ahhhh</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+
+    <!-- Title -->
+    <h1 id="pageTitle">Ahhhh
+        <img id="headerSwirl" src="swirl.png">
+    </h1>
+
+    <!-- Navigation bar -->
+    <div class="navigationBar">
+        <table>
+            <td>
+                <a class="navigationBarCurrent">JavaScript</a>
+            </td>
+            <td>
+                <a class="navigationBarIdle" href="python.html">Python</a>
+            </td>
+        </table>
+    </div>
+
+    <!-- Game links -->
+    <div class="gameLinkTable" style="margin-bottom:10vw">
+        <table>
+            <tr>
+                <a href="https://johnnyhowe.github.io/snake">
+                    <div class="gameLink">
+                        <img class="gameImages" src="thumbnails/snake.png">
+                        
+                        <h1 class="gameTitle">
+                            Snake
+                        </h1>
+                        <p class="gameInfo">
+                            You gotta help feed the snake! Be careful, he gets big!
+                        </p>
+                        <p class="gameType">
+                            JavaScript - Click me to play!
+                        </p>
+                    </div>
+                </a>
+            </tr>
+            <tr>
+                <a href="https://johnnyhowe.github.io/conways-game-of-life-javascript/">
+                    <div class="gameLink">
+                        <img class="gameImages" src="thumbnails/gameoflife.png">
+                        
+                        <h1 class="gameTitle">
+                            Game Of Life
+                        </h1>
+                        <p class="gameInfo">
+                            Do you know the rules? Draw cells and see what happens!
+                        </p>
+                        <p class="gameType">
+                            JavaScript - Click me to play!
+                        </p>
+                    </div>
+                </a>
+            </tr>
+            <tr>
+                <a href="https://anwildduck.github.io/flappybird/">
+                    <div class="gameLink">
+                        <img class="gameImages" src="thumbnails/flappybird.png">
+                        
+                        <h1 class="gameTitle">
+                            Flappy Bird
+                        </h1>
+                        <p class="gameInfo">
+                            A rip off of the original, I'm not very creative...
+                        </p>
+                        <p class="gameType">
+                            JavaScript - Click me to play!
+                        </p>
+                    </div>
+                </a>
+            </tr>
+        </table>
+    </div>
+</body>
 
 </html>

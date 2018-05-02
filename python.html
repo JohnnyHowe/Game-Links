@@ -1,74 +1,101 @@
 <html>
-	<head>
-		<title>Some Shitty Games</title>
-		<link rel="stylesheet" type="text/css" href="main.css">
-	</head>
-	<body>
-		<h1 class="mainHeader">Ahhhh
-			<table class="headerLinktable">
-				<td>
-					<a href="index.html" class="headerLink">JavaScript</a>
-				</td>
-				<td>
-					<a class="chosenHeaderLink">Python</a>
-				</td>
-			</table>
-		</h1>
 
-		<a href="pythonsetup.html" target="blank">
-			<div id="pythonRequirement">Python (3) and PyGame are<br/>required for these to run!</div>
-			<div id="pythonRequirementLink">How the heck do I set that up?</div>
-			<div id="pythonRequirementLinkSmaller">(PS. Click here)</div>
-		</a>
+<head>
+    <title>Ahhhh</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
 
-		<table class="gameLinkTable">
-			<tr>
-				<td class="gameLink">
-					<a href="https://github.com/JohnnyHowe/Basic-character-movement/archive/master.zip">
-						<img class="gameLinkImage" style="margin-top: 2.4vw;" src="thumbnails/stickparkour.png" alt="Character Movement">
-						<div class="gameLinkInfo">Python - Click to download</div>
-						<div class="gameLinkText">Character Movement</div>
-					</a>
-				</td>
-				<td class="gameLink">
-					<a href="https://github.com/JohnnyHowe/Dodge/archive/master.zip">
-						<img class="gameLinkImage" src="thumbnails/dodge.png" alt="Dodge">
-						<div class="gameLinkInfo">Python - Click to download</div>
-						<div class="gameLinkText">Dodge</div>
-					</a>
-				</td>
-				<td>
-					<a href="https://github.com/JohnnyHowe/3d-PyGame/archive/master.zip">
-						<img class="gameLinkImage" src="thumbnails/3dsphere.png" alt="3d PyGame">
-						<div class="gameLinkInfo">Python - Click to download</div>
-						<div class="gameLinkText">3d PyGame</div>
-					</a>
-				</td>
-			</tr>
-			<tr>
-				<td class="gameLink">
-					<a href="https://github.com/JohnnyHowe/Tower-Defence/archive/master.zip">
-						<img class="gameLinkImage" src="thumbnails/towerdefence.png" alt="Tower Defence">
-						<div class="gameLinkInfo">Python - Click to download</div>
-						<div class="gameLinkText">Tower Defence</div>
-					</a>
-				</td>
-				<td class="gameLink">
-					<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-						<img class="gameLinkImage" src="thumbnails/nothing.png" alt="nothing">
-						<div class="gameLinkInfo">AHHHHH</div>
-						<div class="gameLinkText">PlaceHolder</div>
-					</a>
-				</td>
-				<td>
-					<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-						<img class="gameLinkImage" src="thumbnails/nothing.png" alt="nothing">
-						<div class="gameLinkInfo">AHHHH</div>
-						<div class="gameLinkText">PlaceHolder</div>
-					</a>
-				</td>
-			</tr>
-		</table>
-	</body>
+<body>
+
+    <div id="topBar">
+        <!-- Title -->
+        <h1 id="pageTitle">Ahhhh
+            <img id="headerSwirl" src="swirl.png">
+        </h1>
+
+        <!-- Navigation bar -->
+        <div class="navigationBar">
+            <table>
+                <td>
+                    <a class="navigationBarIdle" href="index.html">JavaScript</a>
+                </td>
+                <td>
+                    <a class="navigationBarCurrent">Python</a>
+                </td>
+            </table>
+        </div>
+    </div>
+
+    <!-- Python install link -->
+    <div class="pythonInstallLink">
+        <a href="pythoninstall.html">
+            <p class="pythonLinkBig">
+                To
+                <br />run these
+                <br />games, Python
+                <br />(3) and PyGame
+                <br />must be installed.
+            </p>
+            <p class="pythonLinkSmall">
+                Click here to find out how to install these.
+            </p>
+        </a>
+    </div>
+
+    <!-- Game links -->
+    <div class="gameLinkTable" style="top:-19vw">
+        <table>
+            <tr>
+                <a href="https://github.com/JohnnyHowe/dodge/archive/master.zip">
+                    <div class="gameLink">
+                        <img class="gameImages" src="thumbnails/dodge.png">
+                        <h1 class="gameTitle">
+                            Dodge
+                        </h1>
+                        <p class="gameInfo">
+                            Dodge the blocks, It's kinda boring.
+                        </p>
+                        <p class="gameType">
+                            Python - Click here to download!
+                        </p>
+                    </div>
+                </a>
+            </tr>
+            <tr>
+                <a href="https://github.com/JohnnyHowe/tower-defence/archive/master.zip">
+                    <div class="gameLink">
+                        <img class="gameImages" src="thumbnails/towerdefence.png">
+                        <h1 class="gameTitle">
+                            Tower Defence
+                        </h1>
+                        <p class="gameInfo">
+                            You're under attack! Place towers to defend yourself!
+                        </p>
+                        <p class="gameType">
+                            Python - Click here to download!
+                        </p>
+                    </div>
+                </a>
+            </tr>
+            <tr>
+                <a href="https://github.com/JohnnyHowe/basic-character-movement/archive/master.zip">
+                    <div class="gameLink">
+                        <img class="gameImages" src="thumbnails/stickparkour.png">
+                        <h1 class="gameTitle">
+                            Bad Game Physics
+                        </h1>
+                        <p class="gameInfo">
+                            Run around and climb up walls!
+                        </p>
+                        <p class="gameType">
+                            Python - Download to play!
+                        </p>
+                    </div>
+                </a>
+
+            </tr>
+        </table>
+    </div>
+</body>
 
 </html>

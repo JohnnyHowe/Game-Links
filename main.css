@@ -1,207 +1,223 @@
-@font-face {
-	font-family: "unispace";
-	src: url("fonts/unispace.ttf");
-}
-
 * {
 	margin: 0;
-}
-
-.mainHeader {
-	text-align: left;
+	padding: 0;
 	font-family: "unispace";
-	
-	font-size: 6vw;
-
-	background: #9e42f4;
-	color: white;
-	
-	padding: 1vw;
 	font-weight: bold;
 }
 
-.headerLinkTable {
-	position: relative;
-
-	table-layout:fixed;
-	border: 0px solid #000;
-}
-
-.headerLink {
-	text-align: center;
-	font-family: "unispace";
-	margin-right: 2vw;
-	font-size: 2vw;
-	color: #000;
-}
-
-.chosenHeaderLink {
-	text-align: center;
-	text-decoration: underline;
-
-	font-family: "unispace";
-	
-	margin-right: 2vw;
-	font-size: 2vw;
-	color: #000;
-}
-
-body {
+html {
 	overflow-x: hidden;
-	width: 100%;
-	
-	padding: 0px;
-	margin: 0px;
 }
 
-.gameLinkTable {
+#topBar {
 	position: relative;
-
-	left: 20vw;
-	width: 60vw;
-
-	table-layout:fixed;
-	border: 0px solid #000;
+	z-index: 2
 }
 
 a {
 	text-decoration: none;
 }
 
+body {
+    background-color: #383838;
+}
+
+@font-face {
+	font-family: "unispace";
+	src: url("unispace.ttf");
+}
+
+#pageTitle {
+	font-size: 6vw;
+	
+	background: #9e42f4;
+	color: white;
+	
+	padding: 0.75vw;
+    text-align: left;
+}
+
+#headerSwirl {
+	float: right;
+	margin: -1vw;
+
+	height: 8.9vw;
+}
+
+.navigationBar {
+	position: static;
+
+	background: #bc7af8;
+	color: white;
+	
+	padding: 0.5vw;
+	text-align: left;
+}
+
+.navigationBarCurrent {
+	text-align: center;
+	text-decoration: underline;
+	
+	margin-right: 2vw;
+	font-size: 2vw;
+	color: #000;
+
+	opacity: 0.7;
+}
+
+.navigationBarCurrent:hover {
+	opacity: 1;
+}
+
+.navigationBarIdle {
+	text-align: center;
+	text-decoration: none;
+	
+	margin-right: 2vw;
+	font-size: 2vw;
+	color: #000;
+
+	opacity: 0.7;
+}
+
+.navigationBarIdle:hover {
+	opacity: 1;
+}
+
+.gameLinkTable {
+	position: relative;
+	left: 20vw;
+	top: 3vw;
+
+	width: 60vw;
+}
+
 .gameLink {
 	position: relative;
+	margin-top: 3vw;
+
+	opacity: 0.8;
+	height: 13vw;
+
+	background-color: #eee;
 }
 
-.gameLinkText {
-	position: relative;
-	top: -16.5vw;
-
-	text-align: left;
-	color: #000;
-
-	font-family: "unispace";
-	font-size: 2vw;
-
-	margin-left: 2vw;
-}
-
-.unfinishedText {
-	position: absolute;
-	top: 3.5vw;
-
-	text-align: left;
-	color: #c22;
-
-	font-family: "unispace";
-	font-size: 2vw;
-
-	margin-left: 2vw;
-}
-
-.gameLinkImage {
-	position: relative;
-	width: 18vw;	
-
-	margin-bottom: -3vw;
-	margin-right: 1vw;
-	margin-left: 1vw;
-}
-.gameLinkImage:hover {
-	position: relative;
-	width: 18vw;	
-
-	opacity: 0.4;
-
-	margin-bottom: -3vw;
-	margin-right: 1vw;
-	margin-left: 1vw;
-}
-
-.gameLinkImage:hover + .gameLinkInfo {
-	position: relative;
-
-	text-align: left;
-	color: #000;
+.gameLink:hover {
 	opacity: 1;
-
-	font-family: "unispace";
-	font-size 1.8vw;
-
-	margin-left: 2vw
 }
 
-.gameLinkInfo {
-	position: relative;
-	text-align: center;
-
-	opacity: 0;
-	color: #000;
-
-	font-family: "unispace";
-	font-size: 1vw;
-
-	margin-top: 1vw;
-	margin-left: 2vw;
+.gameImages {
+	height: 13vw;
 }
 
-#pythonRequirement {
+.gameTitle {
 	position: relative;
+	top: -13vw;
+	left: 13vw;
+	width: 45.7vw;
 
-	background-color: #cf9bff;
-	color: #eee;
-
-	padding: 2vw;
-	margin-top: 2vw;
-
-	text-align: center;
-	font-family: "unispace";
-	
 	font-size: 3vw;
-	font-weight: bold;
+	margin-top: 1.3vw;
+	margin-left: 1.3vw;
+
+	text-decoration: none;
+
+	color: #000;
+	opacity: 0.7;
 }
 
-#pythonRequirementLink {
-	position: relative;
-
-	background-color: #cf9bff;
-	color: #eee;
-
-	padding-bottom: 0.5vw;
-
-	text-align: center;
-	font-family: "unispace";
-	
-	font-size: 2vw;
-	font-weight: bold;
+.gameLink:hover .gameTitle {
+	opacity: 1;
 }
 
-#pythonRequirementLinkSmaller {
+.gameLink:hover .gameTitle {
+	width: 45.7vw;
+	color: #222
+}
+
+.gameInfo {
+	position: relative;
+	top: -7vw;
+	left: 13vw;
+	width: 45.7vw;
+
+	font-size: 1.25vw;
+	margin-left: 1.3vw;
+
+	color: #666;
+}
+
+.gameLink:hover .gameInfo {
+	opacity: 0;
+}
+
+.gameType {
+	position: relative;
+	top: -8.5vw;
+	left: 13vw;
+	width: 45.7vw;
+
+	font-size: 1.25vw;
+	margin-left: 1.3vw;
+
+	color: #555;
+	opacity: 0;
+}
+
+.gameLink:hover .gameType {
+	position: relative;
+	top: -8.5vw;
+	left: 13vw;
+	width: 45.7vw;
+
+	font-size: 1.25vw;
+	margin-left: 1.3vw;
+
+	color: #555;
+	opacity: 1;
+}
+
+.pythonInstallLink {
 	position: relative;
 
-	background-color: #cf9bff;
-	color: #eee;
+	right: 16vw;
+	bottom: 8vw;
+	width: 40vw;
 
-	padding-bottom: 2vw;
-	margin-bottom: 3vw;
+	padding-top: 10vw;
 
+	background-color: #ddbafc;
+
+	transform: rotate(-45deg);
+}
+
+.pythonLinkBig {
 	text-align: center;
-	font-family: "unispace";
-	
 	font-size: 1.5vw;
-	font-weight: bold;
-}
+	color: #fff;
 
-.tutorialImage {
 	position: relative;
-
-	left: 10vw;
-	width: 80vw;
-
-	padding-top: 2vw;
-	padding-bottom: 2vw;
+	right: 0.3vw;
+	top: 0.5vw;
 }
 
-#tutorialTableImage {
-	position: absolute;
-	border: 1px solid #000;
+.pythonLinkSmall {
+	position: relative;
+	top: 0.5vw;
+
+	text-align: center;
+	font-size: 1vw;
+	color: #fff;
+
+	padding: 1vw;
+	background-color: #ddbafc;
+}
+
+.tutorialImages {
+	position: relative;
+	width: 70vw;
+	left: 15vw;
+
+	/* margin-top: 5vw; */
+	margin-bottom: 5vw;
 }
