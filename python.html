@@ -2,15 +2,15 @@
 
 <head>
     <title>Johnny's projects</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 
 <body>
 
-    <div id="topBar">
+    <div id="headerBar">
         <!-- Title -->
         <h1 id="pageTitle">Projects
-            <img id="headerSwirl" src="swirl.png">
+            <!-- <img id="headerSwirl" src="swirl.png"> -->
         </h1>
 
         <!-- Navigation bar -->
@@ -20,7 +20,7 @@
                     <a class="navigationBarIdle" href="index.html">JavaScript</a>
                 </td>
                 <td>
-                    <a class="navigationBarCurrent">Python</a>
+                    <a class="navigationBarCurrent" href="python.html">Python</a>
                 </td>
             </table>
         </div>
@@ -43,59 +43,30 @@
     </div>
 
     <!-- Game links -->
-    <div class="gameLinkTable" style="top:-19vw">
-        <table>
-            <tr>
-                <a href="https://github.com/JohnnyHowe/dodge/archive/master.zip">
-                    <div class="gameLink">
-                        <img class="gameImages" src="thumbnails/dodge.png">
-                        <h1 class="gameTitle">
-                            Dodge
-                        </h1>
-                        <p class="gameInfo">
-                            Dodge the blocks, It's kinda boring.
-                        </p>
-                        <p class="gameType">
-                            Python - Click here to download!
-                        </p>
-                    </div>
-                </a>
-            </tr>
-            <tr>
-                <a href="https://github.com/JohnnyHowe/tower-defence/archive/master.zip">
-                    <div class="gameLink">
-                        <img class="gameImages" src="thumbnails/towerdefence.png">
-                        <h1 class="gameTitle">
-                            Tower Defence
-                        </h1>
-                        <p class="gameInfo">
-                            You're under attack! Place towers to defend yourself!
-                        </p>
-                        <p class="gameType">
-                            Python - Click here to download!
-                        </p>
-                    </div>
-                </a>
-            </tr>
-            <tr>
-                <a href="https://github.com/JohnnyHowe/basic-character-movement/archive/master.zip">
-                    <div class="gameLink">
-                        <img class="gameImages" src="thumbnails/stickparkour.png">
-                        <h1 class="gameTitle">
-                            Bad Game Physics
-                        </h1>
-                        <p class="gameInfo">
-                            Run around and climb up walls!
-                        </p>
-                        <p class="gameType">
-                            Python - Download to play!
-                        </p>
-                    </div>
-                </a>
-
-            </tr>
+    <div class="gameLinkTable" style="margin-bottom:10vw">
+        <table id="gameLinkTable">
         </table>
     </div>
+
+    <p style="text-align:center">It's all broken, I'm rebuilding it now</p>
+
+    <script src="scripts/buildTable.js"></script>
+    <script>
+        // buildTable("gameLinkTable", [{
+        //     title: "Tower Defence",
+        //     desc: "Basic tower defence game",
+        //     type: "Python, Click to download!",
+        //     link: "https://github.com/JohnnyHowe/tower-defence/archive/master.zip",
+        //     iconFilepath: "./thumbnails/towerdefence.png"
+        // }, {
+        //     title: "Hurdle Jump",
+        //     desc: "Jump over some hurdles",
+        //     type: "Python, Click to download!",
+        //     link: "https://github.com/JohnnyHowe/Hurdle-Jump-Python/archive/master.zip",
+        //     iconFilepath: "./thumbnails/towerdefence.png"
+        // }, ]);
+    </script>
+
 </body>
 
 </html>
