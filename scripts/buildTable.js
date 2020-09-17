@@ -51,7 +51,7 @@ function getBuiltLink(title, desc, type, link, iconFilepath) {
  * @returns {string} the format of the link
  */
 function getLinkBoxFormat() {
-    return `<a href="GAME_LINK">
+    return `<a href="GAME_LINK" target="_blank">
     <div class="gameLink">
         <img class="gameImages" src="GAME_ICON_PATH">
 
